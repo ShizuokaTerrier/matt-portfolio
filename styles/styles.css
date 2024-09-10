@@ -6,10 +6,11 @@
 
 :root {
   /* Color Theme Swatches in Hex */
-  --primary-color: #f5f5f5;
-  --secondary-color: #48cfcb;
-  --tertiary-color: #229799;
-  --black-color: #424242;
+  --primary-color: #7c93c3;
+  --secondary-color: #c3ac7c;
+  --tertiary-color: #55679c;
+  --forth-color: #1e2a5e;
+  --fifth-color: #e1d7b7;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -51,26 +52,45 @@ section {
 
 .sec1 {
   display: none;
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color);
   transform: translateY(0) scale(1);
 }
 
 .sec2 {
   display: none;
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
   transform: translateY(0) scale(1);
 }
 
 .sec3 {
   display: none;
+  background-color: var(--forth-color);
+  transform: translateY(0) scale(1);
+}
+
+.sec4 {
+  display: none;
   background-color: var(--tertiary-color);
   transform: translateY(0) scale(1);
 }
 
-.sec1 {
+.sec5 {
   display: none;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   transform: translateY(0) scale(1);
+}
+
+.active {
+  display: block;
+  animation: scaleAnim 1s ease-in-out;
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 .controls {

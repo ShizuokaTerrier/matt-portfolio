@@ -36,7 +36,8 @@ function pageTransitions() {
         section.classList.remove('active');
       });
       const element = document.getElementById(id);
-      element.classList.remove('active');
+      element.classList.add('active');
+      console.log(element);
     }
   });
 }
