@@ -134,6 +134,28 @@ section {
   }
 }
 
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--tertiary-color);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow-1);
+  transition: all 0.1s ease-in-out;
+  &:active {
+    transform: translateY(-3px);
+  }
+  i {
+    font-size: 1.4rem;
+    color: rgb(227, 225, 225);
+  }
+}
+
 /* header content */
 
 .header-content {
@@ -438,8 +460,9 @@ section {
         a {
           display: flex;
           align-items: center;
-          color: var(--secondary-color);
-          background-color: white;
+          color: rgb(227, 225, 225);
+          background-color: var(--primary-color);
+          box-shadow: var(--box-shadow-1);
           cursor: pointer;
           width: 50px;
           height: 50px;
