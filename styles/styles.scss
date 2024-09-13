@@ -43,7 +43,6 @@ a {
 header {
   height: 100vh;
   color: white;
-  overflow: hidden;
 }
 
 section {
@@ -603,3 +602,5 @@ section {
     }
   }
 }
+
+@import './media';
