@@ -303,6 +303,9 @@ section {
   font-weight: 500;
   font-size: 1.2rem;
 }
+.timeline .timeline-item ul li {
+  margin: 1rem;
+}
 
 .port-text {
   padding: 2rem 0;
